@@ -1,4 +1,5 @@
  @extends('layouts.default')
+{{-- ,['title'=>'About']--}}
  @section('content')
 <div class="container">
  <h2> what is laracast</h2>
