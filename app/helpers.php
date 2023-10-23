@@ -10,3 +10,10 @@ if(!function_exists('page_title'))
             return $title.'|' . $base_title;
     }
 }
+if(!function_exists('set_cctive_route'))
+{
+    function set_cctive_route($route)
+    {
+        return Route::is($route)?'active':'';
+    }
+}
