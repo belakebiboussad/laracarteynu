@@ -19,3 +19,15 @@ Route::get('/about',[
     'as'=>'about',
     'uses'=>'PagesController@about'
 ]);
+Route::get('/contact',[
+    'as'=>'contact',
+    'uses'=>'ContactController@create'
+]);
+Route::post('/contact',[
+    'as'=>'contact',
+    'uses'=>'ContactController@store'
+]);
+Route::get('/test-email', function() {
+// return new \App\Mail\MessageSended("belakebi",'bbelakebi@dta.dz','une salutation');
+    return new \App\Mail\ContactMessageCreated('Bous','bousbelakebi@gmail.com','Bonjour');
+});

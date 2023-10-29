@@ -25,7 +25,7 @@
                         <li><a href="https://larachat.com">Larachat</a></li>
                     </ul>
                 </li>
-                <li><a href="#about">Contact</a></li>
+                <li><a href="{{route('contact') }}">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Login</a></li>
